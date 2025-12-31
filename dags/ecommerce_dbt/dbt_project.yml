@@ -1,0 +1,35 @@
+name: 'ecommerce_dbt'
+profile: 'ecommerce_dbt'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - 'target'
+  - 'dbt_modules'
+  - 'dbt_packages'
+
+seeds:
+  ecommerce_dbt:
+    +schema: bronze
+
+models:
+  ecommerce_dbt:
+    bronze:
+      +tags: bronze
+      +schema: bronze
+      +materialized: table
+
+    silver:
+      +tags: silver
+      +schema: silver
+      +materialized: table
+    
+    gold:
+      +tags: gold
+      +schema: gold
+      +materialized: table

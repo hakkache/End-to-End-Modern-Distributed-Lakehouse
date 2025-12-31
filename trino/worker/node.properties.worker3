@@ -1,0 +1,3 @@
+node.environment=lakehouse
+node.id=worker-3
+node.data-dir=/data/trino

@@ -1,0 +1,60 @@
+models:
+  - name: bronze_customer_events
+    description: "raw customer event data with basic data quality checks"
+    columns:
+      - name: event_id
+        description: "unique identifier for each event"
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: "identifier for the customer associated with the event"
+        tests:
+          - not_null
+      - name: event_timestamp
+        description: "timestamp when the event occurred"
+        tests:
+          - not_null
+  - name: bronze_inventory_snapshots
+    description: "raw inventory snapshot data with basic data quality checks"
+    columns:
+      - name: snapshot_id
+        description: "unique identifier for each inventory snapshot"
+        tests:
+          - not_null
+          - unique
+      - name: product_id
+        description: "identifier for the product in the inventory"
+        tests:
+          - not_null
+      - name: quantity_on_hand
+        description: "quantity of the product available in inventory"
+        tests:
+          - not_null
+  
+  - name: bronze_payment_transactions
+    description: "raw payment transaction data with basic data quality checks"
+    columns:
+      - name: transaction_id
+        description: "unique identifier for each payment transaction"
+        tests:
+          - not_null
+          - unique
+      - name: amount
+        description: "amount of the payment transaction"
+        tests:
+          - not_null
+  
+  - name: bronze_support_tickets
+    description: "raw support ticket data with basic data quality checks"
+    columns:
+      - name: ticket_id
+        description: "unique identifier for each support ticket"
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: "identifier for the customer who created the support ticket"
+        tests:
+          - not_null
+     

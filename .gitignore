@@ -1,0 +1,38 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Airflow
+logs/
+airflow.db
+airflow.cfg.bak
+
+# DBT
+dags/ecommerce_dbt/target/
+dags/ecommerce_dbt/dbt_packages/
+dags/ecommerce_dbt/logs/
+dags/ecommerce_dbt/seeds/*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
