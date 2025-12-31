@@ -12,7 +12,7 @@
 
 ## 📊 System Architecture
 
-![Lakehouse Architecture](architecture-diagram.png)
+![Lakehouse Architecture]([architecture-diagram.png](https://github.com/hakkache/End-to-End-Modern-Distributed-Lakehouse/blob/main/asset/ModernAr.png))
 
 ### Architecture Details
 
