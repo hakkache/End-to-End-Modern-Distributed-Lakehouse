@@ -167,7 +167,7 @@
 
 ```bash
 # 1. Clone repository
-git clone <your-repo-url>
+git clone https://github.com/hakkache/End-to-End-Modern-Distributed-Lakehouse.git
 cd "End To End Modern Distributed Lakehouse"
 
 # 2. Start all services
